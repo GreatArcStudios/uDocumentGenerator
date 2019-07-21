@@ -1,0 +1,58 @@
+input {
+    border: none !important;
+}
+
+.landing-container {
+    align-self: center;
+    font-size: 200%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    display: flex;
+}
+
+.main-page {
+    background-color: #2a2a2a;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.main-page *:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.overlay-bottom {
+    display: inline-flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 20;
+    font-size: 110%;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.overlay-bottom * {
+    font-size: 1.57em !important;
+    padding: 5px 5px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.overlay-bottom *:hover {
+    color: #2a2a2a;
+    background-color: white;
+}
+
+.main-grid {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}

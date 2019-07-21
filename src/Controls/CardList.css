@@ -1,0 +1,12 @@
+.menu-item-wrapper {
+    border: 1px transparent solid;
+    padding-bottom: 10px;
+}
+
+.menu-item-wrapper.active {
+}
+
+.scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+}

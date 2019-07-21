@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+    margin-bottom: 0.2rem;
+}

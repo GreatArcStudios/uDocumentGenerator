@@ -1,0 +1,81 @@
+@media (max-width: 425px) {
+    .card {
+        width: 290px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 255px !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid #DDD;
+    height: 200px;
+    width: 300px;
+    align-self: center;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card:hover {
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.9);
+}
+
+hr {
+    background-color: #2a2a2a;
+    width: 100%;
+    margin: 0.2em;
+}
+
+.content-wrapper {
+    height: 100%;
+    display: inherit;
+    flex-flow: column;
+}
+
+.class-title-wrapper {
+    height: 20%;
+}
+
+.class-title-wrapper > h3 {
+    font-size: 1.5rem;
+}
+
+.class-description-wrapper {
+    font-size: 13px;
+    display: inherit !important;
+    flex: 1;
+    overflow-x: hidden;
+    padding-top: 5px;
+}
+
+.class-description-wrapper a {
+    color: #212529;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+}
+
+.class-description-wrapper a:hover {
+    font-weight: bold;
+}
+
+.class-description-wrapper * {
+    text-overflow: ellipsis !important;
+    white-space: pre-line !important;
+    font-weight: 100;
+}
