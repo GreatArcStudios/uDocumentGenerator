@@ -11,7 +11,7 @@ const StyledCode = styled.pre`
     margin-bottom: 10px;
     margin-top: 10px;  
     min-width: 325px; 
-    font-size: 16px;
+    font-size: 13px;
     transition: all 0.4s ease-in-out;
     & > code { 
       padding: 10px 50px 10px 15px;

@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import uDGLogo from '../icons/uDG.png';
+import ProcessJSON from "../Processing/ProcessJSON";
+import InlineCode from "../Markdown-Render/InlineCode";
+import ReactMarkdown from "react-markdown";
+import CodeBlock from "../Markdown-Render/CodeBlock";
 
 const AuthorContainer = styled.div`
   display: flex;
@@ -78,6 +82,23 @@ const DescriptionContainer = styled.div`
   }
 `;
 
+const AcknowledgementsContainer = styled.div`
+  overflow-x:hidden;
+  width: 80%;
+  max-height: 200px;
+  min-height: 50px !important;
+  height: auto;
+  @media(max-width: 375px){
+    height: 95px;
+  }
+   @media(max-width: 1000px){
+   max-height: 170px;
+  }
+  @media(max-width: 800px){
+   max-height: 150px;
+  }
+`;
+
 const Container = styled.div`
   width: auto;
   height: auto;
@@ -92,6 +113,14 @@ const Container = styled.div`
   overflow-x: hidden;
   @media(max-width: 500px){
     top: 70px;
+  }
+  a{
+  	color: white;
+  	transition: all 0.4s !important;
+  	text-decoration: underline;
+  }
+  a:hover{
+  	font-weight: bold;
   }
 `;
 
@@ -134,7 +163,7 @@ class About extends Component {
 						</h1>
 						<div>
 							<DescriptionContainer>
-								{this.props.description}
+								<ReactMarkdown source={this.props.description} escapeHtml={false}/>
 							</DescriptionContainer>
 						</div>
 					</ContentContainer>
@@ -143,9 +172,10 @@ class About extends Component {
 							Acknowledgements
 						</h1>
 						<div>
-							<DescriptionContainer>
-								{this.props.acknowledgements}
-							</DescriptionContainer>
+							<AcknowledgementsContainer>
+								<ReactMarkdown source={this.props.acknowledgements} escapeHtml={false}
+								               renderers={{inlineCode: InlineCode, code: CodeBlock}}/>
+							</AcknowledgementsContainer>
 						</div>
 					</ContentContainer>
 				</ContentWrapper>

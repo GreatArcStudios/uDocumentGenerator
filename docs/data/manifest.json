@@ -1,0 +1,14 @@
+{
+  "short_name": "Deployment",
+  "name": "Deployment Test",
+  "icons": [
+    {
+      "src": "/data/abstractlogo.png",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

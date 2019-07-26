@@ -79,7 +79,7 @@ class App extends React.Component {
 
 	changePage(openPage, index = this.state.displayIndex) {
 		this.setState({openPage: openPage, displayIndex: index});
-		// change index of open page to Classes index from this.pages
+		// updates the visual style of the Navbar
 		this.navBar.UpdateNavBar(openPage);
 	}
 
@@ -99,7 +99,7 @@ class App extends React.Component {
 	};
 
 	render() {
-		// keep pages in the render method so that
+		// keep pages in the render method so that we can update their props
 		this.pages = [
 			<div className="landing-container">
 				<StyledLanding data={this.processed[0]} projName={this.state.projName}

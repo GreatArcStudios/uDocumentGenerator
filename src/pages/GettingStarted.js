@@ -17,6 +17,20 @@ const Container = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 100px;
+  blockquote{
+    margin: 5px;
+    padding-left: 2em;
+    border-left: 0.2em white solid;
+  }
+  h3{
+  	margin-top: 8px;
+  }
+  h1{
+  	margin-top: 8px;
+  }
+  h2{
+  	margin-top: 8px;
+  }
 `;
 
 const SectionHeader = styled.div`
@@ -478,7 +492,7 @@ class GettingStarted extends Component {
 	markdownGettingStarted = () => {
 		return (
 			<Section>
-				<ReactMarkdown source={this.props.markdownGettingStarted} escapeHtml={false}
+				<ReactMarkdown source={this.props.MDGettingStarted} escapeHtml={false}
 				               renderers={{inlineCode: InlineCode, code: CodeBlock}}/>
 			</Section>
 		);
@@ -492,6 +506,7 @@ class GettingStarted extends Component {
 	};
 
 	render() {
+		console.log(this.props.markdownGettingStarted);
 		return (
 			<Container>
 				{this.createContent(this.props.useMarkDown)}
