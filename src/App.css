@@ -1,5 +1,8 @@
 input {
     border: none !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 @media screen and (max-height: 500px) and (orientation: landscape){
     .overlay-bottom{

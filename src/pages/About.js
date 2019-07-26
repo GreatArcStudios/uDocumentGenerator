@@ -121,6 +121,7 @@ const Container = styled.div`
   overflow-x: hidden;
   @media(max-width: 500px){
     top: 70px;
+    margin-bottom: 100px;
   }
   @media(orientation: landscape) and (max-height: 1000px){
   	min-height: 100px;
