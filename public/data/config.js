@@ -858,6 +858,7 @@ This guide is organized into 4 parts:
  
 ## Installation 
 <a name="installation"/>
+
 Installation should be quick and fairly painless. The main installation step is to download the React App portion of uDocumentGenerator from [Github](https://github.com/GreatArcStudios/uDocumentGenerator). 
 If you haven't used Github before, you have 3 options: 
 
@@ -889,6 +890,7 @@ The instruction for Linux are found [here](https://nodejs.org/en/download/packag
 
 ## Getting Started 
 <a name="gettingstarted"/>
+
 If you want to see your comments turned into a website immediately, all you need to do is fill out the fields in the editor extension window.
 
  The website template drop down should point to where the \`\`\`data\`\`\` folder in \`\`\`build\`\`\` folder is. You may change this (instructions below) if you decide to create a new build of the React App. 
@@ -1047,4 +1049,5 @@ The best way to customise the app is to go through the strings you need to custo
  - Components created from styled components will override those created from separate style sheets (including node modules). So when building your version of the app make sure to check for style issues. If there are discrepancies between the build and what you see from running it on the localhost, just add \`\`\`!important\`\`\` to that style. 
  - Declare your variables before your methods in your Unity project. If you don't do that, uDocumentGenerator won't record your variables.
  - For deployment, the current setup works for standalone/downloaded documentation. This is also the setup used with Github pages right now. Alternatively, you can check out the \`\`\`create react app\`\`\` [page](https://facebook.github.io/create-react-app/docs/deployment) for information about custom deployment.
+ - The footer on the about page is part of the center grommet box defined in App. This is to prevent mobile formatting issues. If you have components that don't work well with the bottom grommet box, just put them in the 2nd (largest one). Fixed/absolute positioning are likely causes for mobile formatting problems. 
 `;

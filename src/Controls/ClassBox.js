@@ -18,6 +18,9 @@ const Container = styled.div`
 	display: block;
 	margin-left: 10px;
 	-webkit-overflow-scrolling: touch;
+	@media(orientation: landscape) and (max-height: 500px), (max-width: 500px){
+		overflow-y: scroll;
+	}
 `;
 
 const NameContainer = styled.div`

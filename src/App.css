@@ -4,7 +4,7 @@ input {
 @media screen and (max-height: 500px) and (orientation: landscape){
     .overlay-bottom{
         position: relative !important;
-        margin-top: 20px;
+        margin-top: 200px;
     }
     .landing-container{
         margin-bottom: 100px;
@@ -13,7 +13,7 @@ input {
 @media screen and (max-width: 500px) and (orientation: portrait){
     .overlay-bottom{
         position: relative !important;
-        margin-top: 500px;
+        margin-top: 200px;
     }
     .landing-container{
         margin-bottom: 100px;

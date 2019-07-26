@@ -30,12 +30,12 @@
 }
 @media (orientation: landscape){
    .layout-splitter{
-       width: 2px !important;
+       width: 4px !important;
    }
 }
 @media (orientation: portrait){
     .layout-splitter{
-        width: 2px !important;
+        width: 4px !important;
     }
 }
 @media screen and (max-height: 500px) and (orientation: landscape){
