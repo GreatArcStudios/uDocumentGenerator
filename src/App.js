@@ -52,7 +52,7 @@ class App extends React.Component {
 		this.useMarkDown = true;
 		// the indices of pages where the footer is disabled.
 		// the useMarkDown condition can be safely changed
-		this.disableSocialFooter = this.useMarkDown ? [1, 2] : [2];
+		this.disableSocialFooter = this.useMarkDown ? [1, 2, 3] : [2];
 		this.navBar = null;
 		// used to change the page through the card
 		this.classesReference = null;

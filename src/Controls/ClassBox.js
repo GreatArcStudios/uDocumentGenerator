@@ -17,6 +17,7 @@ const Container = styled.div`
 	height: 100%;
 	display: block;
 	margin-left: 10px;
+	-webkit-overflow-scrolling: touch;
 `;
 
 const NameContainer = styled.div`
