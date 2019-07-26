@@ -1,6 +1,15 @@
 input {
     border: none !important;
 }
+@media screen and (max-height: 500px) and (orientation: landscape){
+    .overlay-bottom{
+        position: relative !important;
+        margin-top: 160px;
+    }
+    .landing-container{
+        margin-bottom: 100px;
+    }
+}
 
 .landing-container {
     align-self: center;
@@ -31,7 +40,7 @@ input {
     font-size: 110%;
     color: white;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 

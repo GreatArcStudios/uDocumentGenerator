@@ -17,19 +17,29 @@ const Container = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 100px;
+  -webkit-overflow-scrolling: touch;
+  @media(max-width: 500px){
+  	overflow-y: scroll;
+  }
   blockquote{
     margin: 5px;
     padding-left: 2em;
     border-left: 0.2em white solid;
   }
   h3{
-  	margin-top: 8px;
+  	margin-top: 30px;
+  	margin-bottom: 30px;
   }
   h1{
-  	margin-top: 8px;
+  	margin-top: 30px;
+  	margin-bottom: 30px;  
   }
   h2{
-  	margin-top: 8px;
+  	margin-top: 30px;
+  	margin-bottom: 30px; 
+  }
+  @media(max-width: 450px){
+	display: block;
   }
 `;
 
@@ -53,6 +63,9 @@ const Section = styled.div`
   }
   & a:hover{
     font-weight: 500;
+  }
+  @media(max-width: 500px){
+  	margin-left: 25px;
   }
 `;
 
@@ -506,7 +519,6 @@ class GettingStarted extends Component {
 	};
 
 	render() {
-		console.log(this.props.markdownGettingStarted);
 		return (
 			<Container>
 				{this.createContent(this.props.useMarkDown)}

@@ -63,6 +63,9 @@ const WhiteNavBrand = styled(Navbar.Brand)`
 
 const StyledSearchBar = styled(SearchBar)`
     -webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease;-ms-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;
+	input{
+		-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;
+	}
 `;
 
 class NavbarBoostrap extends Component {

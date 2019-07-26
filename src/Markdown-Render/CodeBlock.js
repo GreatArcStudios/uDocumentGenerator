@@ -21,7 +21,7 @@ const StyledCode = styled.pre`
       min-width: 300px;
     }
     @media(max-width: 500px){
-      min-width: 375px;
+      min-width: 320px;
     }
     &:hover{
       box-shadow: 0 2px 5px 5px rgba(0,0,0,0.30);

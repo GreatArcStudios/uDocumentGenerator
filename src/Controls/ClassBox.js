@@ -108,7 +108,7 @@ const StyledSearchBar = styled(SearchBar)`
 	width: 100%;
 	max-width: 500px;
 	margin-left: 30px;
-	margin-right: 50px;
+	margin-right: 30px;
 	background-color: white;
 	transition: all .5s ease;
 	&:hover{ 
@@ -121,11 +121,17 @@ const StyledSearchBar = styled(SearchBar)`
 
 const VarTableContainer = styled.div`
 	padding-right:80px;
+	@media(max-width: 500px){
+		padding-right: 40px;
+	}
 	& *{
 	color: white !important;
 	td{
 	    overflow-wrap: break-word;
 	    font-family: 'Fira Code', monospace !important;
+	    @media(max-width: 500px){
+	    	font-size: 10px;
+	    }
 	}
 	thead *{
 		border-top: 0 !important;
@@ -170,8 +176,8 @@ const Section = styled.div`
   margin-left: 50px;
   margin-bottom: 10px;
   @media(max-width: 500px){ 
-  	margin-left: 20px;
-  	max-width: 350px
+  	margin-left: 0px;
+  	max-width: 300px
   }
   // enable if you want white text in your markdown
   //& *{
@@ -195,9 +201,10 @@ class ClassBox extends Component {
 			filteredFunctionData: [],
 			functionData: [],
 			filteredVariableData: null,
-			variableData: null
+			variableData: null,
+			windowWidth: window.innerWidth,
 		};
-		this.state.filteredVariableData = ProcessJSON.processVariables(this.state.data);
+		this.state.filteredVariableData = ProcessJSON.processVariables(this.state.data, this.state.windowWidth);
 		this.state.variableData = this.state.filteredVariableData;
 		this.generateFunctionData = this.generateFunctionData.bind(this);
 		this.state.functionData = this.generateFunctionData();
@@ -248,7 +255,7 @@ class ClassBox extends Component {
 			this.setState({filteredFunctionData: this.state.functionData});
 		}
 		if (this.state.data !== prevState.data) {
-			const processedData = ProcessJSON.processVariables(this.state.data);
+			const processedData = ProcessJSON.processVariables(this.state.data, this.state.windowWidth);
 			this.setState({variableData: processedData, filteredVariableData: processedData})
 		}
 	}

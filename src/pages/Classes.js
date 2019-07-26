@@ -63,7 +63,6 @@ const ClassInfoContainer = styled.div`
   overflow-y: auto !important;
   z-index: 10;
   padding-left: 20px;
-  //background: #2a2a2a;
   @media(max-width: 375px){
     padding-left: 10px;
   }
@@ -87,7 +86,6 @@ class Classes extends Component {
 		this.state = {
 			data: this.props.data,
 			displayIndex: this.props.displayIndex,
-			windowWidth: window.innerWidth,
 		};
 		this.classBox = null
 	}

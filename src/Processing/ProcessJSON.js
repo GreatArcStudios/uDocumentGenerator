@@ -147,10 +147,21 @@ class ProcessJSON {
 	}
 
 	// prepares variables for variable table
-	static processVariables(fileRep) {
+	static processVariables(fileRep, windowWidth) {
 		// check https://react-bootstrap-table.github.io/react-bootstrap-table2/docs/getting-started.html for docs
 		// regarding the format of columns
-		const columns = [
+		const columns = windowWidth <= 450 ? [
+			{
+				dataField: 'varName',
+				text: 'Variable Name',
+				sort: true
+			},
+			{
+				dataField: 'description',
+				text: 'Description',
+				sort: true
+			},
+		] : [
 			{
 				dataField: 'varName',
 				text: 'Variable Name',

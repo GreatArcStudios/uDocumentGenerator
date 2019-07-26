@@ -104,6 +104,9 @@ fabric.properties
 # .idea/misc.xml
 # *.ipr
 
+# just ignore .idea
+/.idea
+
 # Sonarlint plugin
 .idea/sonarlint
 

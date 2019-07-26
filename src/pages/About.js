@@ -71,6 +71,7 @@ const DescriptionContainer = styled.div`
   max-height: 400px;
   min-height: 50px !important;
   height: auto;
+  -webkit-overflow-scrolling: touch;
   @media(max-width: 375px){
     height: 95px;
   }
@@ -88,6 +89,7 @@ const AcknowledgementsContainer = styled.div`
   max-height: 200px;
   min-height: 50px !important;
   height: auto;
+  -webkit-overflow-scrolling: touch;
   @media(max-width: 375px){
     height: 95px;
   }
@@ -114,6 +116,12 @@ const Container = styled.div`
   @media(max-width: 500px){
     top: 70px;
   }
+  @media(orientation: landscape) and (max-height: 500px){
+  	min-height: 100px;
+  	height: 100%;
+  	margin-bottom: 300px;
+  }
+  
   a{
   	color: white;
   	transition: all 0.4s !important;

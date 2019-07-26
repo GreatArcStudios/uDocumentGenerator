@@ -20,6 +20,9 @@ const TopContainer = styled.div`
 const ProjectNameHeader = styled.h1`
     text-align:center;
     color: white;
+    @media(max-width: 500px){
+    	font-size: 25px;
+    }
 `;
 
 const StyledSearchBar = styled(SearchBar)`
@@ -34,6 +37,9 @@ const StyledSearchBar = styled(SearchBar)`
    }
    @media(min-width: 738px){ 
       margin:20px;
+    }
+    @media(max-width: 500px){
+       
     }
 `;
 
