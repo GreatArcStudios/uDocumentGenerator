@@ -8,6 +8,9 @@
     .card {
         width: 255px !important;
     }
+    h3{
+        font-size: 1.4rem !important;
+    }
 }
 
 * {

@@ -58,11 +58,17 @@ const UDGLogo = styled.div`
 const ContentContainer = styled.div`
   display: block;
   margin-top: 20px;
+  @media(orientation: landscape) and (max-height: 1000px){
+  	margin-top: 13px;
+  }
 `;
 
 const ContentWrapper = styled.div`
   margin-top: 30px;
   display: block;
+  @media(orientation: landscape) and (max-height: 1000px){
+  	margin-top: 13px;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -105,6 +111,9 @@ const AcknowledgementsContainer = styled.div`
   @media(max-width: 800px){
    max-height: 150px;
   }
+  @media(orientation: landscape) and (max-height: 1000px){
+  	max-height: 175px;
+  }
 `;
 
 const Container = styled.div`
@@ -122,12 +131,14 @@ const Container = styled.div`
   @media(max-width: 500px){
     top: 70px;
     margin-bottom: 100px;
+    height: 100%;
   }
   @media(orientation: landscape) and (max-height: 1000px){
   	min-height: 100px;
   	height: 100%;
   	padding-bottom: 150px;
   	-webkit-overflow-scrolling: touch;
+  	top: 75px;
   }
   
   a{

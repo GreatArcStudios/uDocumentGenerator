@@ -49,8 +49,8 @@ class CardList extends React.Component {
 			scrollToSelected: true,
 			translate: 0.0,
 			transition: 0.4,
-			inertiaScrolling: false,
-			slowdownFactor: 0.25,
+			inertiaScrolling: true,
+			slowdownFactor: 0.10,
 			wheel: false,
 		};
 		this.MenuItem = ({text, selected, index, description}) => {

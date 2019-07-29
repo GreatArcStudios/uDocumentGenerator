@@ -21,6 +21,11 @@ const Container = styled.div`
 	@media(orientation: landscape) and (max-height: 1000px), (max-width: 500px){
 		overflow-y: scroll;
 	}
+	@media(max-width:375px){
+		h1{
+			font-size: 2rem !important;
+		}
+	}
 `;
 
 const NameContainer = styled.div`
