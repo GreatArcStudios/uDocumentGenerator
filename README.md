@@ -9,7 +9,8 @@ This guide is organized into 4 parts:
  
 ## Installation 
 <a name="installation"/>
-Installation should be quick and fairly painless. The main installation step is to download the React App portion of uDocumentGenerator from [Github](https://github.com/GreatArcStudios/uDocumentGenerator). 
+
+Installation should be quick and fairly painless. The main installation step is to download the React App portion of uDocumentGenerator from [Github](https://github.com/GreatArcStudios/uDocumentGenerator/). 
 If you haven't used Github before, you have 3 options: 
 
  1. Fork the repo - press the fork button
@@ -40,6 +41,7 @@ The instruction for Linux are found [here](https://nodejs.org/en/download/packag
 
 ## Getting Started 
 <a name="gettingstarted"/>
+
 If you want to see your comments turned into a website immediately, all you need to do is fill out the fields in the editor extension window.
 
  The website template drop down should point to where the ```data``` folder in ```build``` folder is. You may change this (instructions below) if you decide to create a new build of the React App. 
@@ -115,7 +117,7 @@ The key takeaways from this are:
  4. Make sure that you have a way of updating, visually, components that are meant to receive updated data.
 
 
-### Updating components during runtime**
+### Updating components during runtime
 
 In React, it's a good idea to make   changing data a state to update the UI. Yet, ```filteredFunctionData``` (the list of MethodBoxes) in ```ClassBox.js``` would update incorrectly. The number of MethodBoxes were correct, but the content was still the old content. This is likely due to React optimizations regarding replacing components of the same type (the old list of MethodBoxes gets replaced with a new list). To circumvent this, we have an intermediate step that replaces the list of MethodBoxes with a different type (in this case an empty list). This is implemented in ```Classes.js```:
 ```javascript
