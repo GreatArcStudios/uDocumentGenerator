@@ -13,7 +13,7 @@
     "highlight.js": "^9.15.8",
     "list.js": "^1.5.0",
     "lodash": "latest",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.21.0",
     "prop-types": "latest",
     "react": "^16.8.6",
     "react-autobind": "^1.0.6",
